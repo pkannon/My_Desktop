@@ -16,5 +16,9 @@ function checkTime(i) {
     return i;
 }
 
+$("#saveNoteBtn").click(function(){
+    var currentNotes = $("#note-area").val();
+    localStorage.setItem("notes", currentNotes);
+});
 
 

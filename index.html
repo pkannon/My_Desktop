@@ -29,6 +29,18 @@
 </body>
 
 <script>
+try {
+    var loadNotes = localStorage.getItem("notes");
+}
+
+catch(err) {
+    var loadNotes = "Enter you notes here and click 'Save'";
+}
+
+$("#note-area").val(loadNotes);
+
+
+
     var sp = "/"
     var today = new Date();
     var dd = today.getDate();
