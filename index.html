@@ -17,6 +17,7 @@
         </div>
         <div class="main">
             <div class="widget">
+                <h1>notepad</h1>
                 <div class="notepad">
                     <textarea id="note-area" name="message" rows="20" cols="40"></textarea>
                 </div>
@@ -29,7 +30,7 @@
 </body>
 
 <script>
-    
+
 $("#saveNoteBtn").click(function() {
     var currentNotes = $("#note-area").val();
     localStorage.setItem("notes", currentNotes);
